@@ -1,15 +1,17 @@
 # Claude Code Instructions
 
-Scope: `harness/` only. Read `README.md § Scope` first — do not violate without permission.
+Scope: `harness/` only. Read `README.md § Project Scope` first — do not violate without permission.
 Source code and GitHub are ground truth — when asked critical questions or in conflict with memory or summaries, always read the repo first.
 Log key findings to `MEMORY.md`. Keep reports factual: model, date, prompt, metric, result.
 
 ## Rules (non-negotiable)
 
-1. Correctness and perf are separate runs. Remind if correctness has not been checked at each milestone or final.
-2. No hardcoded params — including seeds. Everything configurable goes in a config file.
-3. Every run dir must be self-contained and reproducible.
-4. **Perf trials depend on test weight.** Lightweight: ≥5 trials; multinode: 1 trial is ok.
+1. **Think like an architect.** Customer-ready deliverables. Anticipate hard questions before they're asked.
+2. **Separate correctness and perf runs.** Remind if correctness is unchecked at milestones or final.
+3. **Apple-to-apple comparisons.** Same data, hardware, config — only the variable under test changes.
+4. **Every run is self-contained.** Must be reproducible in isolation.
+5. **No hardcoded params, including seeds.** Everything variable goes in a config file.
+6. **Perf trials by weight.** Lightweight: ≥5 trials; multinode: 1 trial.
 
 Ask before: changing scope, loosening tolerances, adding root files or deps, touching parent code.
 
@@ -17,7 +19,6 @@ Ask before: changing scope, loosening tolerances, adding root files or deps, tou
 
 Run until the goal is achieved. Never pause for human input — log blockers to `reports/YYYY-MM-DD_blockers.md` and skip. Write `reports/YYYY-MM-DD_summary.md` at job end.
 
-1. **Fixed time budget per run.** Every run gets the same wall-clock limit — results stay comparable across all variations.
-2. **Single modification point.** The agent edits only one file or component per iteration — keeps diffs reviewable and prevents cascading failures.
-3. **Retain or discard on one metric.** One unambiguous signal decides keep or discard. No human judgment mid-run.
-4. **Intent lives in a guidance file.** Written before launch, read at every iteration. The only way to steer the agent mid-run.
+1. **Write intent before launch.** Describe goal and constraints in a guidance file — the only mid-run communication channel.
+2. **One change per iteration.** Edit only one file or component — keeps diffs reviewable, prevents cascading failures.
+3. **One metric decides.** Retain if it improves; discard otherwise. No human judgment mid-run.
