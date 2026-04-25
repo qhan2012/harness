@@ -3,7 +3,7 @@
 ```
 harness/
 ├── experiments/   # experiment runs
-├── reports/       # ISO-date outputs (YYYY-MM-DD_description.md)
+├── reports/       # outputs (YYYY-MM-DD_description.md)
 ├── memory/        # Claude Code persistent memory
 ├── CLAUDE.md
 └── MEMORY.md
