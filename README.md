@@ -8,5 +8,3 @@ harness/
 ├── CLAUDE.md
 └── MEMORY.md
 ```
-
-**Scope:** Self-contained — reference and SUT must not import from the parent project.
