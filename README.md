@@ -8,3 +8,7 @@ harness/
 ├── CLAUDE.md
 └── MEMORY.md
 ```
+
+## Project Scope
+
+_TODO: describe the goal, the problem being solved, and any constraints specific to this project._
