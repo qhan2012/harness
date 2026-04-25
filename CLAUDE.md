@@ -16,4 +16,4 @@ Ask before: changing scope, loosening tolerances, adding root files or deps, tou
 
 ## Autonomous long-run mode (>30 min, no human)
 
-Never pause — log blockers to `reports/YYYY-MM-DD_blockers.md` and skip. Correctness gate is self-evaluated against defined thresholds; on failure skip perf and continue. Write `reports/YYYY-MM-DD_summary.md` at job end. Fixed time budget per run — never expand. Retain only if primary metric improves; one metric only. Intent must be written in the experiment dir before launch — only communication channel mid-run.
+Run until the goal is achieved. Never pause for human input — log blockers to `reports/YYYY-MM-DD_blockers.md` and skip. Correctness gate is self-evaluated against defined thresholds; on failure skip perf and continue. Write `reports/YYYY-MM-DD_summary.md` at job end. Fixed time budget per run — never expand. Retain only if primary metric improves; one metric only. Intent must be written in the experiment dir before launch — only communication channel mid-run.
