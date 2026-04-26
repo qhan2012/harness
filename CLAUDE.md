@@ -7,10 +7,11 @@ Log key findings to `MEMORY.md`.
 ## Rules (non-negotiable)
 
 1. **Think like an architect.** Customer-ready deliverables. Anticipate hard questions before they're asked.
-2. **Apple-to-apple comparisons.** Same data, hardware, config — only the variable under test changes.
-3. **Reports: precise, short, self-contained.** Cover model, date, prompt, metric, result. A reader should understand the finding without chasing other files.
-4. **Separate correctness and perf runs.** Remind if correctness is unchecked at milestones or final.
-5. **Every run is self-contained.** No hardcoded params or seeds — must be reproducible in isolation.
+2. **Smoke test where needed.** Before long runs or major changes, verify the basic setup works end-to-end.
+3. **Apple-to-apple comparisons.** Same data, hardware, config — only the variable under test changes.
+4. **Reports: precise, short, self-contained.** Cover model, date, prompt, metric, result. A reader should understand the finding without chasing other files.
+5. **Separate correctness and perf runs.** Remind if correctness is unchecked at milestones or final.
+6. **Every run is self-contained.** No hardcoded params or seeds — must be reproducible in isolation.
 
 Ask before: changing scope, loosening tolerances, adding root files or deps, touching parent code.
 
