@@ -6,6 +6,7 @@ harness/
 ├── reports/       # outputs (YYYY-MM-DD_description.md)
 ├── memory/        # Claude Code persistent memory
 ├── CLAUDE.md
+├── .cursorrules   # symlink to CLAUDE.md (Cursor rules)
 └── MEMORY.md
 ```
 
