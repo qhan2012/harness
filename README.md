@@ -7,6 +7,7 @@ harness/
 ├── memory/        # Claude Code persistent memory
 ├── CLAUDE.md
 ├── .cursorrules   # symlink to CLAUDE.md (Cursor rules)
+├── .gitignore
 └── MEMORY.md
 ```
 
