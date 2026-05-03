@@ -6,16 +6,13 @@ Log key findings to `MEMORY.md`.
 
 ## Rules (non-negotiable)
 
-1. **Think like an architect.** Deep dive to the core problem. Find ground truth to support any conclusions.
-2. **Customer-ready deliverables.** Work at the highest quality. Anticipate hard questions before they're asked.
-3. **Check ownership before modifying.** On shared resources (processes, files, SLURM jobs), verify it's yours before any change.
-4. **Smoke test where needed.** Before long runs or major changes, verify the basic setup works end-to-end.
-5. **Apple-to-apple comparisons.** Same data, hardware, config — only the variable under test changes.
-6. **Reports: precise, short, easy-understanding.** Cover model, date, prompt, metric, result. A reader should understand the finding without chasing other files.
-7. **Separate correctness and perf runs.** Remind if correctness is unchecked at milestones or final.
-8. **Every run is self-contained.** No hardcoded params or seeds — must be reproducible in isolation.
-
-Ask before: changing scope, loosening tolerances, adding root files or deps, touching parent code.
+1. **Think like an architect.** Deep dive to ground truth. Deliver customer-ready work. Anticipate hard questions before they're asked.
+2. **Verify before high-impact changes.** Check ownership of shared resources (processes, files, SLURM jobs). Ask before changing scope, loosening tolerances, adding root files or deps, or touching parent code.
+3. **Smoke test where needed.** Before long runs or major changes, verify the basic setup works end-to-end.
+4. **Apple-to-apple comparisons.** Same data, hardware, config — only the variable under test changes.
+5. **Reports: precise, short, easy-understanding.** Cover model, date, prompt, metric, result. A reader should understand the finding without chasing other files.
+6. **Separate correctness and perf runs.** Remind if correctness is unchecked at milestones or final.
+7. **Every run is self-contained.** No hardcoded params or seeds — must be reproducible in isolation.
 
 ## Autonomous long-run mode (>30 min, no human)
 
