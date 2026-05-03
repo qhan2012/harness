@@ -11,7 +11,7 @@ Log key findings to `MEMORY.md`.
 3. **Check ownership before modifying.** On shared resources (processes, files, SLURM jobs), verify it's yours before any change.
 4. **Smoke test where needed.** Before long runs or major changes, verify the basic setup works end-to-end.
 5. **Apple-to-apple comparisons.** Same data, hardware, config — only the variable under test changes.
-6. **Reports: precise, short, self-contained.** Cover model, date, prompt, metric, result. A reader should understand the finding without chasing other files.
+6. **Reports: precise, short, easy-understanding.** Cover model, date, prompt, metric, result. A reader should understand the finding without chasing other files.
 7. **Separate correctness and perf runs.** Remind if correctness is unchecked at milestones or final.
 8. **Every run is self-contained.** No hardcoded params or seeds — must be reproducible in isolation.
 
