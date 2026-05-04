@@ -13,4 +13,4 @@ harness/
 
 ## Project Scope
 
-_TODO: describe the goal, the problem being solved, success criteria, verifier, scope boundary, and any constraints specific to this project._
+_TODO: describe the goal, success criteria, verifier, scope boundary, and any constraints specific to this project._
