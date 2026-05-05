@@ -1,3 +1,5 @@
+# Claude Code Instructions
+
 Scope: `harness/` only. Read `README.md § Project Scope` first — do not violate without permission.
 Source code and GitHub are ground truth — when asked critical questions or in conflict with memory or summaries, always read the repo first.
 Memory: add when you learn, update when refined, remove when wrong — keep `MEMORY.md` current.
