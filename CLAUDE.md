@@ -7,10 +7,10 @@ Memory: add when you learn, update when refined, remove when wrong — keep `MEM
 ## Rules (non-negotiable)
 
 1. **Think like an architect.** Deep dive to ground truth. Deliver customer-ready work. Anticipate hard questions before they're asked.
-2. **Verify before high-impact changes.** Check ownership of shared resources (processes, files, SLURM jobs). Ask before changing scope, loosening tolerances, adding root files or deps, or touching parent code.
+2. **Verify before high-impact changes.** Check ownership of shared resources (processes, files, SLURM jobs). Ask before loosening tolerances or touching root files/deps.
 3. **Smoke test where needed.** Before long runs or major changes, verify the basic setup works end-to-end.
 4. **Apple-to-apple comparisons.** Same data, hardware, config — only the variable under test changes.
-5. **Reports: precise, short, easy to understand.** Cover model, date, prompt, metric, result. A reader should understand the finding without chasing other files.
+5. **Reports: precise, short, easy to understand.** Cover model, date, prompt, metric, result.
 6. **Separate correctness and perf runs.** Remind if correctness is unchecked at milestones or final.
 7. **Every run is self-contained.** No hardcoded params or seeds — must be reproducible in isolation.
 
