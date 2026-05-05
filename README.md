@@ -4,7 +4,7 @@
 harness/
 ├── experiments/
 ├── reports/       # YYYY-MM-DD_description.md
-├── memory/
+├── memory/        # <name>.md with frontmatter (name, description, type); add hook line to MEMORY.md
 ├── CLAUDE.md
 ├── .cursorrules   # symlink to CLAUDE.md
 ├── .gitignore
