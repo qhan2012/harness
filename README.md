@@ -2,11 +2,11 @@
 
 ```
 harness/
-├── experiments/   # experiment runs
-├── reports/       # outputs (YYYY-MM-DD_description.md)
-├── memory/        # Claude Code persistent memory
+├── experiments/
+├── reports/       # YYYY-MM-DD_description.md
+├── memory/
 ├── CLAUDE.md
-├── .cursorrules   # symlink to CLAUDE.md (Cursor rules)
+├── .cursorrules   # symlink to CLAUDE.md
 ├── .gitignore
 └── MEMORY.md
 ```
