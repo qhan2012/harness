@@ -5,9 +5,8 @@ harness/
 ├── experiments/
 ├── reports/       # YYYY-MM-DD_description.md
 ├── memory/        # <name>.md with frontmatter (name, description, type); add hook line to MEMORY.md
-├── AGENTS.md      # canonical workspace instructions
-├── CLAUDE.md      # pointer to AGENTS.md
-├── .cursorrules   # pointer to AGENTS.md
+├── CLAUDE.md      # canonical workspace instructions
+├── .cursorrules   # pointer to CLAUDE.md
 └── .gitignore
 ```
 
