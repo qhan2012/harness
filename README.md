@@ -3,7 +3,7 @@
 ```
 .
 ├── experiments/
-├── reports/       # YYYY-MM-DD_description.md
+├── reports/       # YYYY-MM-DD_worklog.md (raw trace) + _summary.md (distilled; blockers on top)
 ├── memory/        # <name>.md with frontmatter (name, description, type); add an index entry to MEMORY.md
 ├── files/
 ├── MEMORY.md      # index of memory entries (create as needed)
