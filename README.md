@@ -4,7 +4,7 @@
 .
 ├── experiments/
 ├── reports/       # YYYY-MM-DD_description.md
-├── memory/        # <name>.md with frontmatter (name, description, type); add hook line to MEMORY.md
+├── memory/        # <name>.md with frontmatter (name, description, type); add an index entry to MEMORY.md
 ├── files/
 ├── MEMORY.md      # index of memory entries (create as needed)
 ├── CLAUDE.md      # canonical workspace instructions
