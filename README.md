@@ -1,12 +1,15 @@
 # AI Harness Engineering Scaffold
 
 ```
-harness/
+.
 ├── experiments/
 ├── reports/       # YYYY-MM-DD_description.md
 ├── memory/        # <name>.md with frontmatter (name, description, type); add hook line to MEMORY.md
 ├── files/
+├── MEMORY.md      # index of memory entries (create as needed)
 ├── CLAUDE.md      # canonical workspace instructions
+├── AGENTS.md      # pointer to CLAUDE.md
+├── .claude/       # Claude Code settings (settings.local.json gitignored)
 ├── .cursorrules   # pointer to CLAUDE.md
 └── .gitignore
 ```
