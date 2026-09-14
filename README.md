@@ -9,7 +9,7 @@
 ├── MEMORY.md      # index of memory entries (create as needed)
 ├── CLAUDE.md      # canonical workspace instructions
 ├── AGENTS.md      # pointer to CLAUDE.md
-├── .claude/       # Claude Code settings (settings.local.json gitignored)
+├── .claude/       # Claude Code settings (settings.local.json gitignored; create as needed)
 ├── .cursorrules   # pointer to CLAUDE.md
 └── .gitignore
 ```
