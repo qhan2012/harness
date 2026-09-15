@@ -16,7 +16,9 @@ Memory: add when you learn, update when refined, remove when wrong — keep `MEM
 
 ## Autonomous long-run mode (>30 min, no human)
 
-Run until the goal is achieved. Never pause for human input — flag blockers inline in the worklog (prefix `BLOCKER:`) and skip. Keep a running trace in `reports/YYYY-MM-DD_worklog.md` (append one entry per iteration); at job end write `reports/YYYY-MM-DD_summary.md` with any blockers lifted into a section at the top. Pipeline: worklog (raw) → summary (distilled for humans) → memory (only durable lessons graduate).
+Run until the goal is achieved. Never pause for human input. Keep a running trace in `reports/YYYY-MM-DD_worklog.md` (append one entry per iteration); at job end write `reports/YYYY-MM-DD_summary.md` with any blockers lifted into a section at the top. Pipeline: worklog (raw) → summary (distilled for humans) → memory (only durable lessons graduate).
+
+**On a blocker, escalate before skipping:** do more research → step back for a detour → weigh alternative approaches. Only flag it in the worklog (prefix `BLOCKER:`) and skip once the options are genuinely exhausted.
 
 1. **Research prerequisites first.** Establish ground truth before writing intent — read the repo, and where relevant consult authoritative external docs (cite sources in the worklog); source code/GitHub wins on any conflict.
 2. **Write intent before launch.** Describe goal and constraints in a guidance file.
