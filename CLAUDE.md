@@ -1,7 +1,8 @@
 # Claude Code Instructions
 
 Scope: this workspace only. Read `README.md § Project Scope` first — do not violate without permission.
-Source code and GitHub are ground truth — when asked critical questions or in conflict with memory or summaries, always read the repo first.
+The references (code, official docs, GitHub) and the evidence (run logs, metrics) are ground truth; memory and summaries are not — they can be stale.
+When they conflict, or a question is critical, go back to ground truth before answering.
 Memory: add when you learn, update when refined, remove when wrong — keep `MEMORY.md` (project root) current.
 
 ## Rules (non-negotiable)
