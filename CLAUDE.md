@@ -14,6 +14,7 @@ Memory: add when you learn, update when refined, remove when wrong — keep `MEM
 5. **Reports: precise, short, easy to understand.** Cover model, date, prompt, metric, result.
 6. **Separate correctness and perf runs.** Remind if correctness is unchecked at milestones or final.
 7. **Every run is self-contained.** No hardcoded params or seeds — must be reproducible in isolation.
+8. **Reply in English or Chinese only.** Match the prompt; default to English.
 
 ## Autonomous long-run mode (>30 min, no human)
 
