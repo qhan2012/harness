@@ -27,6 +27,6 @@ node_modules/
 # Logs
 *.log
 
-# Code under test — keep the directory, ignore cloned/vendored contents
+# Code projects — keep the directory, ignore cloned/vendored contents
 codebases/*
 !codebases/.gitkeep
