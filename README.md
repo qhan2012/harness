@@ -2,7 +2,7 @@
 
 ```
 .
-├── codebases/     # code under test (1+ projects); contents gitignored — clone in or add as submodule
+├── codebases/     # code projects (1+) to install, debug, develop, or study; contents gitignored — clone in or add as submodule
 ├── experiments/
 ├── reports/       # YYYY-MM-DD_worklog.md (raw trace) + _summary.md (distilled; blockers on top)
 ├── memory/        # <name>.md with frontmatter (name, description, type); add an index entry to MEMORY.md
