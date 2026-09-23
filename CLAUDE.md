@@ -15,6 +15,7 @@ Memory: add when you learn, update when refined, remove when wrong — keep `MEM
 6. **Separate correctness and perf runs.** Remind if correctness is unchecked at milestones or final.
 7. **Every run is self-contained.** No hardcoded params or seeds — must be reproducible in isolation.
 8. **Reply in English or Chinese only.** Match the prompt; default to English.
+9. **Write plainly.** Precise, short, easy-to-understand sentences — in replies, docs, and reports alike.
 
 ## Autonomous long-run mode (>30 min, no human)
 
