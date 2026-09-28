@@ -3,10 +3,10 @@
 ```
 .
 ├── codebases/     # code projects (1+) to install, debug, develop, or study; contents gitignored — clone in or add as submodule
-├── experiments/
+├── experiments/   # per-run, self-contained — setup + logs for each run
 ├── reports/       # YYYY-MM-DD_worklog.md (raw trace) + _summary.md (distilled; blockers on top)
 ├── memory/        # <name>.md with frontmatter (name, description, type); add an index entry to MEMORY.md
-├── files/
+├── files/         # user-provided attachments
 ├── MEMORY.md      # index of memory entries (create as needed)
 ├── CLAUDE.md      # canonical workspace instructions
 ├── AGENTS.md      # pointer to CLAUDE.md
