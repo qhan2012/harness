@@ -26,6 +26,6 @@ Run until the goal is achieved. Never block on human input. Keep a running trace
 3. **One change per iteration.** Edit only one file or component — keeps diffs reviewable, prevents cascading failures.
 4. **Validate each step before moving on.** Confirm the current iteration succeeded — don't compound errors across steps.
 
-**On a blocker at any step, escalate before skipping:** do more research → step back for a global view → weigh alternative approaches. Only flag it in the worklog (prefix `BLOCKER:`) and skip once the options are genuinely exhausted.
+**On a blocker at any step, escalate before skipping:** do more research → step back for a global view → find the best direction. Only flag it in the worklog (prefix `BLOCKER:`) and skip once the options are genuinely exhausted.
 
 **On an unanswered question, decide after 30 min:** when you ask, state a recommended default. If no answer comes within 30 min, apply it, log it in the worklog (prefix `DECISION:`), and report it at the next progress check.
