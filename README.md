@@ -4,7 +4,7 @@
 .
 ├── codebases/     # code projects (1+) to install, debug, develop, or study; contents gitignored — clone in or add as submodule
 ├── experiments/   # per-run, self-contained — setup + logs for each run
-├── reports/       # YYYY-MM-DD_worklog.md (raw trace) + _summary.md (distilled; blockers on top)
+├── reports/       # YYYY-MM-DD_worklog.md (raw trace) + _summary.md (distilled; blockers + decisions on top)
 ├── memory/        # <name>.md with frontmatter (name, description, type); add an index entry to MEMORY.md
 ├── files/         # user-provided attachments
 ├── MEMORY.md      # index of memory entries (create as needed)
