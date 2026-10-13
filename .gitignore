@@ -30,3 +30,4 @@ node_modules/
 # Code projects — keep the directory, ignore cloned/vendored contents
 codebases/*
 !codebases/.gitkeep
+!codebases/REPOS.md
