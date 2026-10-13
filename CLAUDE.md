@@ -19,7 +19,7 @@ Memory: add when you learn, update when refined, remove when wrong — keep `MEM
 
 ## Autonomous long-run mode (>30 min, no human)
 
-Run until the goal is achieved. Never pause for human input. Keep a running trace in `reports/YYYY-MM-DD_worklog.md` (append one entry per iteration); at job end write `reports/YYYY-MM-DD_summary.md` with any blockers lifted into a section at the top. Pipeline: worklog (raw) → summary (distilled for humans) → memory (only durable lessons graduate — from successes, failures, or strong evidence-backed findings).
+Run until the goal is achieved. Never block on human input. Keep a running trace in `reports/YYYY-MM-DD_worklog.md` (append one entry per iteration); at job end write `reports/YYYY-MM-DD_summary.md` with any blockers lifted into a section at the top. Pipeline: worklog (raw) → summary (distilled for humans) → memory (only durable lessons graduate — from successes, failures, or strong evidence-backed findings).
 
 1. **Research prerequisites first.** Establish ground truth before writing intent — read the repo, and where relevant consult authoritative external docs (cite sources in the worklog); source code/GitHub wins on any conflict.
 2. **Write intent before launch.** Describe goal and constraints in a guidance file.
@@ -27,3 +27,5 @@ Run until the goal is achieved. Never pause for human input. Keep a running trac
 4. **Validate each step before moving on.** Confirm the current iteration succeeded — don't compound errors across steps.
 
 **On a blocker at any step, escalate before skipping:** do more research → step back for a detour → weigh alternative approaches. Only flag it in the worklog (prefix `BLOCKER:`) and skip once the options are genuinely exhausted.
+
+**On an unanswered question, decide after 30 min:** when you ask, state a recommended default. If no answer comes within 30 min, apply it, log it in the worklog (prefix `DECISION:`), and report it at the next progress check.
