@@ -11,7 +11,7 @@ Memory: add when you learn, update when refined, remove when wrong — keep `MEM
 2. **Verify before high-impact changes.** Check ownership of shared resources (processes, files, GPUs, scheduler/cluster jobs, ports). Ask before loosening tolerances or touching root files/deps.
 3. **Smoke test where needed.** Before long runs or major changes, verify the basic setup works end-to-end.
 4. **Apple-to-apple comparisons.** Same data, hardware, config — only the variable under test changes.
-5. **Reports: precise, short, easy to understand.** Cover model, date, prompt, metric, result.
+5. **Reports: precise, short, easy to understand.** Cover code name, model, date, prompt, metric, result.
 6. **Separate correctness and perf runs.** Remind if correctness is unchecked at milestones or final.
 7. **Every run is self-contained.** No hardcoded params or seeds — must be reproducible in isolation.
 8. **Reply in English or Chinese only.** Match the prompt; default to English.
