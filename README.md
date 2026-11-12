@@ -6,7 +6,7 @@
 │   └── REPOS.md   # tracked list of repos + pinned commits
 ├── experiments/   # <codename>/<YYYY-MM-DD_HHMM>/ per run — self-contained setup + logs; code name: short, unique kebab-case
 ├── reports/       # YYYY-MM-DD_worklog.md (raw trace) + _summary.md (distilled; blockers + decisions on top)
-├── memory/        # <name>.md with frontmatter (name, description, type); add an index entry to MEMORY.md
+├── memory/        # <name>.md with frontmatter (name, description, type); each entry ends with (verified date, source); add an index entry to MEMORY.md
 ├── files/         # user-provided attachments
 ├── MEMORY.md      # index of memory entries (create as needed)
 ├── CLAUDE.md      # canonical workspace instructions
