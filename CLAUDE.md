@@ -4,6 +4,7 @@ Scope: this workspace only. Read `README.md § Project Scope` first — do not v
 The references (code, official docs, GitHub) and the evidence (run logs, outputs, metrics) are ground truth; memory and summaries are not — they can be stale.
 When they conflict, or a question is critical, go back to ground truth before answering.
 Memory: add when you learn, update when refined, remove when wrong — keep `MEMORY.md` (project root) current.
+Each memory entry ends with its evidence: `(verified YYYY-MM-DD, <source: command, log, or run code name>)`. Check an old entry again before you rely on it for a critical decision.
 
 ## Rules (non-negotiable)
 
