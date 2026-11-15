@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "\"$(git rev-parse --show-toplevel)\"/scripts/handoff_check.sh" }
+        ]
+      }
+    ]
+  }
+}
