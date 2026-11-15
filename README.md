@@ -8,8 +8,8 @@
 ├── reports/       # YYYY-MM-DD_<codename>_<agent>_worklog.md (raw trace, one per agent) + YYYY-MM-DD_<codename>_summary.md (distilled; blockers + decisions on top)
 ├── memory/        # <topic>.md, one topic each, with frontmatter (name, description, type); evidence on each fact; the directory is the index
 ├── files/         # user-provided attachments
-├── AGENTS.md      # canonical instructions for all agent tools; Codex and Cursor read it directly
-├── CLAUDE.md      # Claude Code entry point: imports AGENTS.md
+├── CLAUDE.md      # canonical instructions for all agent tools
+├── AGENTS.md      # symlink to CLAUDE.md, for Codex and Cursor
 ├── .agents/       # tool-neutral agent files
 │   └── skills/    # symlink to .claude/skills, for Codex and Cursor
 ├── .claude/       # Claude Code settings: auto memory off (settings.local.json gitignored)
