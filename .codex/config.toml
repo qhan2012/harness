@@ -1,0 +1,4 @@
+# Codex project config. Codex loads it only when you trust this project.
+# Memories are off by default; this keeps them off so the repo stays the only memory.
+[features]
+memories = false
