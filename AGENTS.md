@@ -6,22 +6,22 @@ When they conflict, or a question is critical, go back to ground truth before an
 
 ## Memory
 
-The repo is the only memory, so any agent tool can continue the work. Write durable knowledge to `memory/<name>.md`, then run `python3 scripts/memory_index.py` to rebuild `MEMORY.md`. Do not edit `MEMORY.md` by hand. Do not rely on a tool's built-in memory (Claude Code auto memory, Codex memories, Cursor Memories). This repo turns them off where it can: `.claude/settings.json` and `.codex/config.toml`. If a tool's built-in memory or user-level instructions conflict with the repo, the repo wins; copy any durable fact found only in a tool's memory into `memory/`.
+The repo is the only memory, so any agent tool can continue the work and several agents can work at once. Keep each memory file small and on one topic: `memory/<topic>.md`. The directory is the index: list it with `grep -rH '^description:' memory/`. Do not rely on a tool's built-in memory (Claude Code auto memory, Codex memories, Cursor Memories). This repo turns them off where it can: `.claude/settings.json` and `.codex/config.toml`. If a tool's built-in memory or user-level instructions conflict with the repo, the repo wins; copy any durable fact found only in a tool's memory into `memory/`.
 
 - Add when you learn, update when refined, remove when wrong.
-- Frontmatter: `name`, `description`, and `type`, one of `reference` (facts about code or tools), `lesson` (what worked or failed in runs), `project` (state and decisions), `feedback` (the user's preferences and corrections).
+- Frontmatter: `name`, `description` (the one-line hook shown in the listing), and `type`, one of `reference` (facts about code or tools), `lesson` (what worked or failed in runs), `project` (state and decisions), `feedback` (the user's preferences and corrections).
 - End each fact with its evidence: `(verified YYYY-MM-DD, <source: command, log, or run code name>)`. Check an old fact again before you rely on it for a critical decision. A fact about a repo in `codebases/` is stale when that repo's commit in `codebases/REPOS.md` changes.
 - Never write secrets, tokens, or passwords to memory.
 - When the same lesson comes back, encode it as a rule, skill, or check instead of more memory.
 
-## Session handoff
+## Multiple agents and handoff
 
-Work must survive a switch between Claude Code, Codex, and Cursor, and a session that ends without warning.
+Several agents can work at once, and any agent tool (Claude Code, Codex, Cursor) can take over. Work must also survive a session that ends without warning.
 
-- Start: read `MEMORY.md`, the plan in `experiments/<codename>/INTENT.md`, and the latest worklog and summary in `reports/`.
-- Each iteration: commit and push the worklog. Do not wait for the end.
-- Before you stop or switch tools: record running jobs (process IDs, scheduler job IDs, GPUs) and uncommitted work in the worklog. Then commit and push the worklog, memory, `MEMORY.md`, and `codebases/REPOS.md`.
-- A Stop hook (`scripts/handoff_check.sh`) blocks the end of a turn while those files are uncommitted or unpushed, or `MEMORY.md` is out of date. It runs in Claude Code and Codex; Cursor does not run it.
+- Each agent writes only its own files. Your worklog is `reports/YYYY-MM-DD_<codename>_<agent>_worklog.md`; `<agent>` names the tool or session, for example `claude`, `codex`, or `cursor`.
+- Start: list memory, read `experiments/<codename>/INTENT.md`, then read the latest worklogs and summary for that code name.
+- Each iteration: commit and push your worklog. Pull with rebase before you push.
+- Before you stop or switch tools: record running jobs (process IDs, scheduler job IDs, GPUs) and uncommitted work in your worklog. Then commit and push.
 - Never push project content to the scaffold repo (`qhan2012/harness`).
 
 ## Rules (non-negotiable)
@@ -38,7 +38,7 @@ Work must survive a switch between Claude Code, Codex, and Cursor, and a session
 
 ## Autonomous long-run mode (>30 min, unattended)
 
-Run until the goal is achieved. Never block on human input. Keep a running trace in `reports/YYYY-MM-DD_worklog.md` (append-only; one entry per iteration: what, why, evidence, result); at job end write `reports/YYYY-MM-DD_summary.md` with any blockers and decisions lifted into a section at the top. Pipeline: worklog (raw) → summary (distilled for humans) → memory (only durable lessons graduate — from successes, failures, or strong evidence-backed findings).
+Run until the goal is achieved. Never block on human input. Keep a running trace in your worklog (append-only; one entry per iteration: what, why, evidence, result); at job end write `reports/YYYY-MM-DD_<codename>_summary.md` with any blockers and decisions lifted into a section at the top. Pipeline: worklog (raw) → summary (distilled for humans) → memory (only durable lessons graduate — from successes, failures, or strong evidence-backed findings).
 
 1. **Research prerequisites first.** Establish ground truth before writing intent — read the repo, and where relevant consult authoritative external docs (cite sources in the worklog); source code/GitHub wins on any conflict.
 2. **Write intent before launch.** Describe goal and constraints in `experiments/<codename>/INTENT.md`.

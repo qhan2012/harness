@@ -1,12 +1,3 @@
 {
-  "autoMemoryEnabled": false,
-  "hooks": {
-    "Stop": [
-      {
-        "hooks": [
-          { "type": "command", "command": "\"$CLAUDE_PROJECT_DIR\"/scripts/handoff_check.sh" }
-        ]
-      }
-    ]
-  }
+  "autoMemoryEnabled": false
 }
