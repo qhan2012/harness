@@ -20,7 +20,7 @@ Each memory entry ends with its evidence: `(verified YYYY-MM-DD, <source: comman
 
 ## Autonomous long-run mode (>30 min, unattended)
 
-Run until the goal is achieved. Never block on human input. Keep a running trace in `reports/YYYY-MM-DD_worklog.md` (append one entry per iteration); at job end write `reports/YYYY-MM-DD_summary.md` with any blockers and decisions lifted into a section at the top. Pipeline: worklog (raw) → summary (distilled for humans) → memory (only durable lessons graduate — from successes, failures, or strong evidence-backed findings).
+Run until the goal is achieved. Never block on human input. Keep a running trace in `reports/YYYY-MM-DD_worklog.md` (append-only; one entry per iteration: what, why, evidence, result); at job end write `reports/YYYY-MM-DD_summary.md` with any blockers and decisions lifted into a section at the top. Pipeline: worklog (raw) → summary (distilled for humans) → memory (only durable lessons graduate — from successes, failures, or strong evidence-backed findings).
 
 1. **Research prerequisites first.** Establish ground truth before writing intent — read the repo, and where relevant consult authoritative external docs (cite sources in the worklog); source code/GitHub wins on any conflict.
 2. **Write intent before launch.** Describe goal and constraints in a guidance file.
@@ -29,4 +29,4 @@ Run until the goal is achieved. Never block on human input. Keep a running trace
 
 **On a blocker at any step, escalate before skipping:** do more research → step back for a global view → find the best direction. Only flag it in the worklog (prefix `BLOCKER:`) and skip once no viable direction remains.
 
-**On an unanswered question, decide after 30 min:** when you ask, state a recommended default. If no answer comes within 30 min, apply it, log it in the worklog (prefix `DECISION:`), and report it at the next progress check.
+**On an unanswered question, decide after 30 min:** when you ask, state a recommended default. If no answer comes within 30 min, apply it, log it in the worklog (prefix `DECISION:`), and report it at the next progress check. This applies only to reversible choices. For an irreversible action (force-push, deleting data, sending external messages), wait for an answer: log it as `BLOCKER:` and continue with other work.
