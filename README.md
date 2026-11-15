@@ -2,7 +2,7 @@
 
 ```
 .
-├── codebases/     # code projects (1+) to install, debug, develop, or study; contents gitignored — clone in or add as submodule
+├── codebases/     # code projects (1+) to install, debug, develop, or study; cloned contents gitignored — clone in or add as submodule
 │   └── REPOS.md   # tracked list of repos + pinned commits
 ├── experiments/   # <codename>/INTENT.md (plan) + <codename>/<YYYY-MM-DD_HHMM>/ per run — self-contained setup + logs; code name: short, unique kebab-case
 ├── reports/       # YYYY-MM-DD_<codename>_<agent>_worklog.md (raw trace, one per agent) + YYYY-MM-DD_<codename>_summary.md (distilled; blockers + decisions on top)

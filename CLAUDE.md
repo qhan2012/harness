@@ -32,7 +32,7 @@ Several agents can work at once, and any agent tool (Claude Code, Codex, Cursor)
 4. **Apple-to-apple comparisons.** Same data, hardware, config — only the variable under test changes.
 5. **Reports: precise, short, easy to understand.** Cover code name, model, date, prompt, metric, result.
 6. **Separate correctness and perf runs.** Remind if correctness is unchecked at milestones or final.
-7. **Every run is self-contained.** No hardcoded params or seeds — must be reproducible in isolation.
+7. **Every run is self-contained.** No hardcoded params or seeds — must be reproducible in isolation. Record each repo's commit in `codebases/REPOS.md`.
 8. **Reply in English or Chinese only.** Match the prompt; default to English.
 9. **Write plainly.** Use ASD-STE100-style simplified technical language — short, active-voice sentences and consistent terms — while preserving technical accuracy.
 

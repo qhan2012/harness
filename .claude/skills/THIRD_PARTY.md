@@ -8,7 +8,7 @@ These skills come from **pstack** by Lauren Tan (poteto), MIT license.
 
 ## Local changes
 
-- Removed `disable-model-invocation: true` from all five, so Claude Code can trigger them automatically.
+- Removed `disable-model-invocation: true` from all five, so agent tools can trigger them automatically.
 - `unslop`: added "Use when ..." to the description, so automatic triggering has a clear cue.
 - `benchmark-checklist`: removed references to pstack playbooks that are not vendored here (Opening a PR, Perf issue, Hillclimb).
 - `principle-prove-it-works`: removed the reference to the `show-me-your-work` skill, which is not vendored here.
