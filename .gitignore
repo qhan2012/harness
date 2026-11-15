@@ -24,8 +24,9 @@ node_modules/
 # Claude Code local settings
 .claude/settings.local.json
 
-# Logs
+# Logs (experiment run logs are evidence: keep them)
 *.log
+!experiments/**/*.log
 
 # Code projects — keep the directory, ignore cloned/vendored contents
 codebases/*
