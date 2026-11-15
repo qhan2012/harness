@@ -3,8 +3,24 @@
 Scope: this workspace only. Read `README.md § Project Scope` first — do not violate without permission.
 The references (code, official docs, GitHub) and the evidence (run logs, outputs, metrics) are ground truth; memory and summaries are not — they can be stale.
 When they conflict, or a question is critical, go back to ground truth before answering.
-Memory: add when you learn, update when refined, remove when wrong — keep `MEMORY.md` (project root) current.
-Each memory entry ends with its evidence: `(verified YYYY-MM-DD, <source: command, log, or run code name>)`. Check an old entry again before you rely on it for a critical decision.
+
+## Memory
+
+The repo is the only memory, so any agent tool can continue the work. Write durable knowledge to `memory/<name>.md` and add one line for it to `MEMORY.md`. Do not rely on a tool's built-in memory (Claude Code auto memory, Codex memories, Cursor Memories); keep those off where the tool allows it.
+
+- Add when you learn, update when refined, remove when wrong.
+- Frontmatter: `name`, `description`, and `type`, one of `reference` (facts about code or tools), `lesson` (what worked or failed in runs), `project` (state and decisions), `feedback` (the user's preferences and corrections).
+- End each fact with its evidence: `(verified YYYY-MM-DD, <source: command, log, or run code name>)`. Check an old fact again before you rely on it for a critical decision. A fact about a repo in `codebases/` is stale when that repo's commit in `codebases/REPOS.md` changes.
+- Never write secrets, tokens, or passwords to memory.
+- When the same lesson comes back, encode it as a rule, skill, or check instead of more memory.
+
+## Session handoff
+
+Work must survive a switch between Claude Code, Codex, and Cursor.
+
+- Start: read `MEMORY.md`, then the latest worklog and summary in `reports/`.
+- End, or before you switch tools: commit and push the worklog, memory, and `codebases/REPOS.md`.
+- Push project work only to the project's `origin`, never to `upstream` (the harness scaffold).
 
 ## Rules (non-negotiable)
 
